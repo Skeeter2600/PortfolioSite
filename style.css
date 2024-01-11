@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: ghostwhite;
 }
 
 body {
@@ -27,6 +28,10 @@ a,
     transition: all 300ms ease;
 }
 
+a {
+    background-color: #dfdfe5;
+}
+
 /* DESKTOP NAV */
 
 nav,
@@ -38,12 +43,15 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    background-color: #dfdfe5;
+    border-radius: 0 0 25px 25px;
 }
 
 .nav-links {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+    background-color: #dfdfe5;
 }
 
 a {
@@ -61,36 +69,11 @@ a:hover {
 
 .logo {
     font-size: 2rem;
+    background-color: #dfdfe5;
 }
 
 .logo:hover {
     cursor: default;
-}
-
-/* HAMBURGER MENU */
-
-#hamburger-nav {
-    display: none;
-}
-
-.hamburger-menu {
-    position: relative;
-    display: inline-block;
-}
-
-.hamburger-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-    cursor: pointer;
-}
-
-.hamburger-icon span {
-    width: 100%;
-    height: 2px;
-    background-color: black;
 }
 
 .menu-links {
@@ -114,34 +97,15 @@ a:hover {
 
 .menu-links li {
     list-style: none;
+    background-color: #dfdfe5;
+}
+
+li {
+    background-color: #dfdfe5;
 }
 
 .menu-links.open {
     max-height: 300px;
-}
-
-.hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px, 5px);
-}
-
-.hamburger-icon.open span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
-}
-
-.hamburger-icon span:first-child {
-    transform: none;
-}
-
-.hamburger-icon span:first-child {
-    opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-    transform: none;
 }
 
 /* SECTIONS */
@@ -158,20 +122,24 @@ section {
     display: flex;
 }
 
-/* PROFILE SECTION */
+/* About Section */
 
-#profile {
+#about {
     display: flex;
     justify-content: center;
     gap: 5rem;
     height: 80vh;
 }
 
-.section__pic-container {
+.section__pic-container,
+.profile_pic{
     display: flex;
-    height: 400px;
-    width: 400px;
+    height: 390px;
+    width: 390px;
     margin: auto 0;
+    border-radius: 35px;
+    box-shadow:  24px 24px 48px #afafaf,
+    -24px -24px 48px #ffffff;
 }
 
 .section__text {
@@ -195,13 +163,6 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
-}
-
-#socials-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 1rem;
 }
 
 /* ICONS */
@@ -257,69 +218,6 @@ section {
 
 .btn-container {
     gap: 1rem;
-}
-
-/* ABOUT SECTION */
-
-#about {
-    position: relative;
-}
-
-.about-containers {
-    gap: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.about-details-container {
-    justify-content: center;
-    flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-    display: flex;
-}
-
-.details-container.color-container {
-    flex: 0 0 calc(25% - 20px); /* Set the flex-basis to 33.33% for all and adjust for any margin/padding */
-    box-sizing: border-box;
-    margin: 10px; /* You can set this to your desired value */
-}
-
-
-.about-pic {
-    border-radius: 2rem;
-}
-
-.arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
-}
-
-.details-container {
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    text-align: center;
-}
-
-.section-container {
-    gap: 4rem;
-    height: 80%;
-}
-
-.section__pic-container {
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
 }
 
 /* WEEKLY4UP SECTION */
@@ -420,9 +318,9 @@ article .icon {
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
     margin: 2rem auto;
     padding: 0.5rem;
+    background-color: #dfdfe5;
 }
 
 .contact-info-container {
@@ -431,14 +329,17 @@ article .icon {
     justify-content: center;
     gap: 0.5rem;
     margin: 1rem;
+    background-color: #dfdfe5;
 }
 
 .contact-info-container p {
     font-size: larger;
+    background-color: #dfdfe5;
 }
 
 .contact-icon {
     cursor: default;
+    background-color: #dfdfe5;
 }
 
 .email-icon {
