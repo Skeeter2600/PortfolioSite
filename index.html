@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Synthesizers</title>
+    <title>Beck Anderson</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+        <button class="hamburger_button"
+                onclick="w3_close()">Close &times;</button>
+        <a href="#about" class="navbar_button">About</a>
+        <a href="#experience" class="navbar_button">Experience</a>
+        <a href="#education" class="navbar_button">Education</a>
+        <a href="#projects" class="navbar_button">Projects</a>
+        <a href="#contact" class="navbar_button">Contact</a>
+    </div>
     <nav id="desktop-nav">
+
         <div class="logo">Beck Anderson</div>
         <div>
             <ul class="nav-links">
@@ -83,4 +93,18 @@
         </div>
     </section>
 </body>
+
+<script>
+    function w3_open() {
+        document.getElementById("main").style.marginLeft = "25%";
+        document.getElementById("mySidebar").style.width = "25%";
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("openNav").style.display = 'none';
+    }
+    function w3_close() {
+        document.getElementById("main").style.marginLeft = "0%";
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("openNav").style.display = "inline-block";
+    }
+</script>
 </html>
