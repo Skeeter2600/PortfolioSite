@@ -277,13 +277,20 @@ section {
     flex-direction: column;
 }
 
+.project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
 .card-body{
     background-color: #FFFFFF;
     box-shadow:  24px 24px 48px #afafaf,
     -24px -24px 48px #ffffff;
     margin: 25px 0;
     overflow: hidden;
-    width: 50vmin;
+    width: 45vmin;
     border-radius: 35px;
     border-color: black;
     border-width: 20px;
@@ -291,10 +298,12 @@ section {
 
 .card-image {
     border-bottom: 4px solid #dfdfe5;
-    width: 50vmin;
+    width: 45vmin;
     overflow: hidden;
     aspect-ratio: 16/9;
+    display: flex;
     object-fit: cover;
+    justify-content: center;
 }
 
 .card-text {
@@ -302,6 +311,7 @@ section {
     text-align: center;
     flex-direction: column;
     align-content: center;
+    height: auto;
 }
 
 .card-description {
