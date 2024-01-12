@@ -276,7 +276,6 @@ section {
     border-radius: 35px;
     border-color: black;
     border-width: 20px;
-    gap: 3rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -287,7 +286,7 @@ section {
     height: auto;
     overflow: hidden;
     aspect-ratio: 1/1;
-    max-height: 20vmax;
+    max-height: 18vmax;
     display: flex;
     object-fit: cover;
     justify-content: center;
@@ -304,7 +303,7 @@ section {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 3rem;
-    width: 80vmin;
+    width: 70vmin;
 }
 
 .experience-card-position-container {
@@ -316,6 +315,7 @@ section {
 
 .experience-position-info {
     padding-bottom: .5rem;
+    font-size: 2.25vmin;
 }
 
 .experience-card-description {
