@@ -278,6 +278,58 @@ section {
     flex-direction: column;
 }
 
+.card-body{
+    background-color: #FFFFFF;
+    box-shadow:  24px 24px 48px #afafaf,
+    -24px -24px 48px #ffffff;
+    margin: 25px 0;
+    min-height: 515px;
+    overflow: hidden;
+    height: 64vmin;
+    width: 50vmin;
+    border-radius: 35px;
+    border-color: black;
+    border-width: 20px;
+}
+
+.card-image {
+    border-bottom: 4px solid #dfdfe5;
+    width: 50vmin;
+    overflow: hidden;
+}
+
+.card-text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.card-description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_link_boarder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+    background-color: #dfdfe5;
+    border-radius: 2rem;
+}
+
+.card-link-text {
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+    font-size: 3vmin;
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
 /* CONTACT */
 
 #contact {
@@ -306,8 +358,8 @@ section {
 }
 
 .contact-info-container p {
-    font-size: larger;
     background-color: #dfdfe5;
+    font-size: 2vmin;
 }
 
 .contact-icon {
@@ -317,15 +369,4 @@ section {
 
 .email-icon {
     height: 2.5rem;
-}
-
-/* FOOTER SECTION */
-
-footer {
-    height: 26vh;
-    margin: 0 1rem;
-}
-
-footer p {
-    text-align: center;
 }
