@@ -10,6 +10,8 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 
 html {
@@ -146,6 +148,7 @@ section {
 /* About Section */
 
 #about {
+    display: flex;
     justify-content: center;
 }
 
@@ -257,6 +260,7 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .experience-container {
@@ -351,7 +355,52 @@ section {
 #education {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.education-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.education-card-body {
+    background-color: transparent;
+    box-shadow:  24px 24px 48px #afafaf,
+    -24px -24px 48px #ffffff;
+    margin: 25px 0;
+    width: auto;
+    overflow: hidden;
+    border-radius: 35px;
+    border-color: black;
+    border-width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-card-image {
+    height: auto;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    max-height: 18vmax;
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    padding: 3rem 3rem 1.5rem;
+    border-radius: 60px;
+}
+
+.education-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 1.5rem 3rem 3rem;
+    width: 70vmin;
 }
 
 /* PROJECTS */
@@ -360,6 +409,7 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .project-container {
@@ -375,7 +425,7 @@ section {
     -24px -24px 48px #ffffff;
     margin: 25px 0;
     overflow: hidden;
-    width: 45vmin;
+    width: 40vmin;
     border-radius: 35px;
     border-color: black;
     border-width: 20px;
@@ -414,7 +464,7 @@ section {
     background-color: #dfdfe5;
     border-radius: 2rem;
     height: 6vmin;
-    width: 50%;
+    width: 60%;
 }
 
 .project-card-link-text {
