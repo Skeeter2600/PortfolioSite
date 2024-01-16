@@ -40,6 +40,10 @@ a {
 nav,
 .nav-links {
     display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+    justify-content: center;
+    flex-direction: row;
 }
 
 nav {
@@ -56,6 +60,10 @@ nav {
     list-style: none;
     font-size: 1.5rem;
     background-color: #dfdfe5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 a {
@@ -111,19 +119,6 @@ li {
 
 .menu-links.open {
     max-height: 300px;
-}
-
-.hamburger_button {
-    width: 5vmin;
-    height: 5vmin;
-    justify-content: center;
-    background-color: transparent;
-}
-
-.hamburger_background {
-    width: 10%;
-    height: 10%;
-    background-color: #afafaf;
 }
 
 .navbar_button {
