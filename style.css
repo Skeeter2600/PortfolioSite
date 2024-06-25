@@ -402,12 +402,21 @@ section {
 
 .education-card-text {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    height: 100%;
+    flex-direction: column;
+    font-size: medium;
+    margin: .5rem;
     padding: 1.5rem 3rem 3rem;
     width: 70vmin;
 }
+
+.education-position-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: x-large;
+}
+
 
 /* PROJECTS */
 
@@ -433,7 +442,7 @@ section {
     margin: 25px 0;
     overflow: hidden;
     width: auto;
-    min-width: 200px;
+    min-width: 350px;
     max-width: 45%;
     border-radius: 35px;
     border-color: black;
